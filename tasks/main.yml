@@ -1,0 +1,7 @@
+---
+# tasks file for test-role-2
+- hosts: all
+  become: true
+  tasks:
+  - name: Create directory
+    file: path=/home/ec2-user/niranjan state=directory mode=775 owner=ansible group=ansible
